@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mind Space</title>
+
+<style>
+
+/* Fundo */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: #f2fafa;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+/* Container principal */
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+/* Logo */
+
+.logo {
+
+    width: 320px;
+    max-width: 85%;
+
+    margin-bottom: 40px;
+
+    animation: fadeIn 1.2s ease;
+
+}
+
+/* Botão */
+
+.start-button {
+
+    padding: 16px 48px;
+
+    font-size: 18px;
+
+    border: none;
+    border-radius: 40px;
+
+    background-color: #457a8c;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+
+}
+
+/* Hover */
+
+.start-button:hover {
+
+    background-color: #356272;
+
+    transform: scale(1.07);
+
+}
+
+/* Animação */
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <img src="logotipo.png"
+         alt="Mind Space Logo"
+         class="logo">
+
+    <button class="start-button"
+        onclick="window.location.href='https://ideias-connect.preview.emergentagent.com/login'">
+
+        Começar
+
+    </button>
+
+</div>
+
+</body>
+</html>
